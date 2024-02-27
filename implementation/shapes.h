@@ -22,6 +22,7 @@ public:
 	bool operator <= (const shape another_shape);
 	bool operator == (const shape another_shape);
 	virtual double calculate_perimeter();
+	double seg_len(std::pair<double, double> point1, std::pair<double, double> point2);
 	double get_epsilon() const;
 	double get_perimeter() const;
 	double get_area() const;							

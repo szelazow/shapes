@@ -15,13 +15,13 @@ class ShapesList
 {
 	list_node* first_element = nullptr;
 public:
-	ShapesList();
 	class iterator{};
 	void pop();
 	void push_back(shape* new_shape);
 	void append(shape* element);
 	void remove(int location);
 	void insert(shape* element, int location);
+	ShapesList();
 	ShapesList(shape new_shape);
 	~ShapesList();
 };

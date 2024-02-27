@@ -80,7 +80,7 @@ double shape::get_area() const
 	return area;
 };
 
-double seg_len(std::pair<double, double> A, std::pair<double, double> B)
+double shape::seg_len(std::pair<double, double> A, std::pair<double, double> B)
 //calculates the length of a segment created by 2 points
 {
 	return sqrt(pow(A.first - B.first, 2.0) + pow(A.second - B.second, 2.0));
@@ -88,7 +88,8 @@ double seg_len(std::pair<double, double> A, std::pair<double, double> B)
 
 void Triangle::check_requirements()
 {
-
+	if ((perimeter / 2.0) - seg_len(A, B) < epsilon || (perimeter / 2.0) - seg_len(B, C) < epsilon || (perimeter / 2.0) - seg_len(A, C) < epsilon)
+		throw ("This is not a triangle.");
 }
 
 void Triangle::check_if_overlap()
@@ -117,10 +118,9 @@ Triangle::Triangle(std::pair<double, double> A1,
 	A = A1;
 	B = B1;
 	C = C1;
+	check_requirements();
 	area = calculate_area();
 	perimeter = calculate_perimeter();
-	if ((perimeter / 2.0) - seg_len(A, B) < epsilon || (perimeter / 2.0) - seg_len(B, C) < epsilon || (perimeter / 2.0) - seg_len(A, C) < epsilon)
-		throw ("This is not a triangle.");
 }
 
 void Rectangle::check_requirements()			//every vertice must be equally distant from the figure's center of mass
