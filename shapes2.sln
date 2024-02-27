@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shapes2", "shapes2\shapes2.vcxproj", "{C89F077F-0FCA-4D60-AF66-103A51DDE0DA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "implementation", "implementation\implementation.vcxproj", "{C89F077F-0FCA-4D60-AF66-103A51DDE0DA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest1", "UnitTest1\UnitTest1.vcxproj", "{79F31437-25E1-4D08-9776-B80EC45F9F5E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tests", "tests\tests.vcxproj", "{79F31437-25E1-4D08-9776-B80EC45F9F5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
