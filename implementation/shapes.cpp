@@ -118,9 +118,9 @@ Triangle::Triangle(std::pair<double, double> A1,
 	A = A1;
 	B = B1;
 	C = C1;
-	check_requirements();
 	area = calculate_area();
 	perimeter = calculate_perimeter();
+	check_requirements();
 }
 
 void Rectangle::check_requirements()			//every vertice must be equally distant from the figure's center of mass

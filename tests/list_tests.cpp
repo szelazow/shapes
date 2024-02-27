@@ -4,9 +4,9 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 #include "..\implementation\shapes.h"
 #include "..\implementation\list_shapes.h"
 
-namespace ShapeTests
+namespace ListTests
 {
-	TEST_CLASS(ShapeTests)
+	TEST_CLASS(ListTests)
 	{
 	public:
 	};
